@@ -1,6 +1,7 @@
 import React from 'react';
 import { Phone, Mail, MapPin, MessageSquare, ArrowUp } from 'lucide-react';
 import { COMPANY_INFO, CATEGORIES } from '../data/portfolioData';
+import logoImg from '../assets/logo.jpeg';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -16,7 +17,7 @@ export const Footer: React.FC = () => {
           {/* Brand Info */}
           <div>
             <div className="brand-logo-link" style={{ marginBottom: '1.25rem' }}>
-              <img src="/logo.jpeg" alt="Metálicas González Suárez" className="brand-logo-img" />
+              <img src={logoImg} alt="Metálicas González Suárez" className="brand-logo-img" />
               <div>
                 <div className="brand-name">
                   Metálicas <span className="text-gold-gradient">González Suárez</span>

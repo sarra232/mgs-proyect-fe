@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MessageSquare, Menu, X } from 'lucide-react';
 import { COMPANY_INFO } from '../data/portfolioData';
+import logoImg from '../assets/logo.jpeg';
 
 interface NavbarProps {
   onQuoteClick: () => void;
@@ -15,7 +16,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onQuoteClick }) => {
     <header className="navbar">
       <div className="container navbar-container">
         <a href="#hero" className="brand-logo-link">
-          <img src="/logo.jpeg" alt="Metálicas González Suárez" className="brand-logo-img" />
+          <img src={logoImg} alt="Metálicas González Suárez" className="brand-logo-img" />
           <div>
             <div className="brand-name">
               Metálicas <span className="text-gold-gradient">González Suárez</span>
