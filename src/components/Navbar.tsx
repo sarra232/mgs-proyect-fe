@@ -28,8 +28,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onQuoteClick }) => {
         <nav>
           <ul className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
             <li>
-              <a 
-                href="#portafolio" 
+              <a
+                href="#portafolio"
                 className="nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -37,8 +37,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onQuoteClick }) => {
               </a>
             </li>
             <li>
-              <a 
-                href="#servicios" 
+              <a
+                href="#servicios"
                 className="nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -46,8 +46,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onQuoteClick }) => {
               </a>
             </li>
             <li>
-              <a 
-                href="#nosotros" 
+              <a
+                href="#nosotros"
                 className="nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -55,8 +55,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onQuoteClick }) => {
               </a>
             </li>
             <li>
-              <a 
-                href="#cotizador" 
+              <a
+                href="#cotizador"
                 className="nav-link"
                 onClick={() => {
                   setMobileMenuOpen(false);
@@ -67,22 +67,22 @@ export const Navbar: React.FC<NavbarProps> = ({ onQuoteClick }) => {
               </a>
             </li>
             <li>
-              <a 
-                href={whatsappUrl} 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-whatsapp"
                 style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}
               >
                 <MessageSquare size={16} />
-                WhatsApp
+                WhatsApp 300 000 0000
               </a>
             </li>
           </ul>
         </nav>
 
         {/* Mobile menu button */}
-        <button 
+        <button
           className="menu-toggle"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Abrir menú"
